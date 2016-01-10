@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class footer extends React.Component {
+export default class Footer extends React.Component {
   static propTypes = {
     name: React.PropTypes.string,
   };
@@ -11,7 +11,9 @@ export default class footer extends React.Component {
 
   render() {
     return (
-      <div></div>
+      <footer id="page_footer">
+        <h2>Footer</h2>
+      </footer>
     );
   }
 }

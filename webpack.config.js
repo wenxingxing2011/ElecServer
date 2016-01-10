@@ -10,5 +10,13 @@ module.exports = getConfig({
 
   // 是否在每次打包之前将之前的打包文件
   // 删除
-  clearBeforeBuild: true
+  clearBeforeBuild: true,
+
+  isDev: true,
+  devServer: {
+  	historyApiFallback:true,
+  	progress:true,
+  	hot:true,
+  	inline:true,
+  }
 })
