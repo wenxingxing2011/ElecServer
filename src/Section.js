@@ -11,7 +11,17 @@ export default class Section extends React.Component {
 
   render() {
     return (
-      <div></div>
+      <section id='posts'>
+        <article class='post'>
+          <header>
+            dcu.log
+          </header>
+            <textarea name="linstentext" id="linstentext" ></textarea>
+          <footer>
+             Article Footer
+          </footer>
+       </article>
+      </section>
     );
   }
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-
 export default class Footer extends React.Component {
   static propTypes = {
     name: React.PropTypes.string,
@@ -7,7 +6,7 @@ export default class Footer extends React.Component {
 
   constructor(props) {
     super(props);
-  }
+  } 
 
   render() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Section from './Section'
 export default class Continer extends React.Component {
   static propTypes = {
     name: React.PropTypes.string,
@@ -16,7 +16,10 @@ export default class Continer extends React.Component {
 
   render() {
     return (
-      <div><h1>Continer</h1></div>
+      <div id ='continer'>
+        <Section/> 
+        <Section/> 
+      </div>
     );
   }
 }

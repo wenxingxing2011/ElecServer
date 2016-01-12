@@ -1,19 +1,20 @@
 import React from 'react';
 
+
 export default class Header extends React.Component {
   static propTypes = {
     name: React.PropTypes.string,
   };
 
-  constructor(props) {
+  constructor(props) { 
     super(props);
   }
 
   render() {
     return (
-      	<header id ='page_header'>
+      	<header id = 'page_header'>
 			<h2 >herder2</h2>
-			<nav>
+			<nav >
 	            <ul>
 	                <li><a href="#">Home</a></li>
 	                <li><a href="#">One</a></li>
