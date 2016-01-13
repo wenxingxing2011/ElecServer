@@ -7,8 +7,7 @@ export default class Section extends React.Component {
 
   constructor(props) {
     super(props);
-  }
-
+  };
   render() {
     return (
       <section id='posts'>

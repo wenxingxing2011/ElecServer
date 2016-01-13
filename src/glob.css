@@ -6,6 +6,12 @@ body { /*整个页面的属性设定*/
     border: solid; /*边缘立体*/
     border-color: #FFFFFF; /*边缘颜色*/
 }
+
+div#continerheader{
+    text-align: center; /*文本居中*/
+    color: #099;
+}
+
 div#continer{
     clear: both;
     display:flex;
@@ -20,6 +26,7 @@ div#continer{
     justify-content:space-between;;
 }
  
+
 h2 { /*设定整个body内的h2的共同属性*/
     text-align: center; /*文本居中*/
     color: #FFFFFF;
