@@ -5,8 +5,6 @@ export default class Continer extends React.Component {
     name: React.PropTypes.string,
   };
 
-
-
   constructor(props) {
     super(props);
     this.state = {
@@ -14,22 +12,27 @@ export default class Continer extends React.Component {
     };
   };
 
-  _onCountChange(inputname, e) {
-    this.setState({
-      count: e.target.value,
-    });
-    console.log([`${inputName}Value`]);
+  onCountChange=(e)=> {
+    var cnt = parseInt(e.target.value)
+    this.setState({count:cnt});
+    console.log(this.state.count);
   };
+
+
   render() {
+    var onCountChange =this.onCountChange;
+    var sectionItems = [];
+    for (var i = 0; i < this.state.count; i++) {
+      sectionItems.push(<Section key = {'sectionItem' +i}/>);
+    };
     return (
       <div>
       <div id = 'continerheader'>
         <text>清输入监听框数量：</text>
-        <input type='number' name ='itemcount' min="1" max="6" onChange ={this._onCountChange}/>
-      </div>
+        <input type='number' name ='itemcount' min="1" max="6" onChange ={onCountChange}/>
+      </div> 
       <div id ='continer'>
-        <Section/> 
-        <Section/> 
+        {sectionItems}
       </div>
       </div>
     ); 
